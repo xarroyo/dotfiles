@@ -38,6 +38,10 @@ Plugin 'tomasr/molokai'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -104,7 +108,6 @@ set number                              " Show line numbers column
 set numberwidth=3                       " Line number column width
 set guicursor+=a:blinkon0               " Turn off cursor blinking
 set ruler                               " Show the line and column number
-
 
 " -----------------------------------------------------------------------------
 " Format

@@ -17,8 +17,6 @@ Plugin 'tpope/vim-fugitive'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
 
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
@@ -28,8 +26,14 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+
 Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-perl/vim-perl'
+Plugin 'rkitover/perl-vim-mxd'
 Plugin 'pangloss/vim-javascript'
+
+Plugin 'townk/vim-autoclose'
 Plugin 'tomasr/molokai'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'flazz/vim-colorschemes'
@@ -74,6 +78,11 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
 " Exclude files and directories using Vim's wildignore and CtrlP's own g:ctrlp_custom_ignore:
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+" -------------------------
+" vim-gitgutter
+" -------------------------
+let g:gitgutter_enabled = 1
 
 
 " -----------------------------------------------------------------------------

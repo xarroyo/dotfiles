@@ -123,6 +123,7 @@ set ruler                               " Show the line and column number
 " -----------------------------------------------------------------------------
 
 syntax on                               " Enable syntax highlighting
+autocmd BufNewFile,BufRead *.htt set filetype=tt2html
 colorscheme wombat
 
 " Identation

@@ -43,6 +43,8 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+Plugin 'HTML-AutoCloseTag'
+Plugin 'TT2-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -132,6 +134,9 @@ set smartindent                         " Smart identation
 set tabstop=2                           " Tab lenght
 set shiftwidth=2                        " Tab lenght (backwards compatible)
 set expandtab                           " Expand tabs to spaces
+
+" Folding
+set foldmethod=indent                   " Use ident for folding
 
 " -----------------------------------------------------------------------------
 " Snippets

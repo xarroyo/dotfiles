@@ -1,6 +1,8 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+#echo $PATH
+#PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 
 # If not running interactively, don't do anything
 case $- in
@@ -140,8 +142,13 @@ alias git_log="git log --graph --oneline --color"
 alias git_network="git log --graph --oneline --color"
 
 alias reset_network="/etc/init.d/networking restart"
-alias tmux="tmux -u"
 
-# edu's search
-alias search='ack-grep -H --ignore-dir=vendor --ignore-dir=local --ignore-dir=root/static/enzime --ignore-dir=root/static/yui --ignore-dir=root/static/portal/framework/yui --ignore-dir=root/static/jstree --ignore-dir=root/static/stacker --ignore-file=ext:yml --ignore-file=ext:sql --ignore-file=ext:map --ignore-file=ext:old --ignore-file=is:jquery.js --ignore-file=is:inportal_restyle.htt --ignore-dir=docker'
+alias sqspurge="aws sqs purge-queue --queue-url https://sqs.eu-central-1.amazonaws.com/543919311565/xavi-events-tests --region eu-central-1"
+alias dev_profile="export AWS_PROFILE=dev"
+alias prod_profile="export AWS_PROFILE=prod"
+alias leiangrok="ngrok http https://br.local:443"
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
